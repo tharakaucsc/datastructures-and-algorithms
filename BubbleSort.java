@@ -13,15 +13,15 @@ class BubbleSort {
     public static void main(String[] args) {
 
         String str[] = {"C", "D", "A", "B","C"};
-        bubbleSort(str);
+        sort(str);
         System.out.println(Arrays.toString(str));
 
         String str1[] = {"C", "D", "A", "B","C"};
-        bubbleSortImprovement_1(str1);
+        improvedSort_1(str1);
         System.out.println(Arrays.toString(str1));
 
         String str2[] = {"C", "D", "A", "B","C"};
-        bubbleSortImprovement_1(str2);
+        improvedSort_2(str2);
         System.out.println(Arrays.toString(str2));
     }
 
@@ -29,7 +29,7 @@ class BubbleSort {
      * Compate adjcent elements and move the grater element to right
      * Moves the max element to the rightmost eligible position in each iteration
      */
-    public static void bubbleSort(String[] values) {
+    public static void sort(String[] values) {
         //iterate through array
         for(int i=0; i<values.length; i++) {
             for(int j=0; j<values.length - 1; j++) { 
@@ -42,7 +42,7 @@ class BubbleSort {
         }
     }
 
-    public static void bubbleSortImprovement_1(String[] values) {
+    public static void improvedSort_1(String[] values) {
         //iterate through array
         for(int i=0; i<values.length; i++) {
             //use a swapped variable to update swap status
@@ -66,7 +66,7 @@ class BubbleSort {
      * since the max value is move to rightmost eligible position, 
      * it is possible to ignore max element from right in the next iteration
      */
-    public static void bubbleSortImprovement_2(String[] values) {
+    public static void improvedSort_2(String[] values) {
         //iterate through array
         for(int i=0; i<values.length; i++) {
             //use a swapped variable to update swap status
